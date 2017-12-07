@@ -1,0 +1,53 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<config>
+  <environments>
+    <urlAPI>http://portal.com:8080/api</urlAPI>
+    <urlHomePage>http://portal.com:8080/web/</urlHomePage>
+    <requestToken>/token/get</requestToken>
+    <requestCsvTestList>/test/get/csv</requestCsvTestList>
+    <requestTest>/test/put</requestTest>
+    <requestTestLog>/test/put/log</requestTestLog>
+    <requestTestAttach>/test/put/attachment</requestTestAttach>
+    <loginHomePage>login</loginHomePage>
+    <passwordHomePage>password</passwordHomePage>
+    <attrTokenName>token</attrTokenName>
+    <tokenValueName>variant</tokenValueName>
+    <tokenValue>3</tokenValue>
+    <projectValueName>projectId</projectValueName>
+    <projectValue>1</projectValue>
+    <cookiePath>/web</cookiePath>
+    <projNameLength>8</projNameLength>
+    <projNameDefault>Nexage</projNameDefault>
+    
+    <cloudName>asushkov</cloudName>
+    <cloudApiKey>628498111456438</cloudApiKey>
+    <cloudApiSecret>mnotYdXciAeaVBqVkmBDTHupsc4</cloudApiSecret>
+    <screenshotName>ProjectList screenshot.jpg</screenshotName>
+    
+    <logName>LogFile.txt</logName>
+    <SID>SID</SID>
+    <projectName>projectName</projectName>
+    <testName>testName</testName>
+    <methodName>methodName</methodName>
+    <hostname>env</hostname>
+    <testId>testId</testId>
+    <content>content</content>
+    <contentType>contentType</contentType>
+    <contentTypeImage>image/png</contentTypeImage>
+    <newTestStatus>In progress</newTestStatus>
+
+    <testRailAPI>http://portal.com/testrail</testRailAPI>
+    <addRunAPI>add_run/</addRunAPI>
+    <addResultAPI>add_result/</addResultAPI>
+    <loginTestRail>login@variant3.com</loginTestRail>
+    <passwordTestRail>Gw8rCp6H</passwordTestRail>
+    <userId>4</userId>
+    <attrName>name</attrName>
+    <attrIncludeAll>include_all</attrIncludeAll>
+    <attrStatusId>status_id</attrStatusId>
+    <attrActual>actual</attrActual>
+    <attrId>id</attrId>
+    <testRunName>TestRun_</testRunName>
+  </environments>
+</config>
+

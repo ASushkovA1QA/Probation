@@ -1,0 +1,67 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml" xml:lang="" lang="">
+<head>
+<script type="text/javascript" src="https://ajax.googleapis.com/ajax/libs/jquery/1.5.2/jquery.min.js"></script>
+<style>
+.menu{width: 300px; height: 25; font-size: 16px; padding-left: 5px;}
+.menu li{list-style: none; float: left; margin-right: 1px; padding-left: 3px;}
+.menu li:hover, .menu li.active {background-color: GreenYellow;}
+</style>
+<title>Automated Tests Results</title>
+<meta http-equiv='Content-Type' content='text/html;charset=utf-8' />
+</head>
+<body style='margin-top: 0;'>
+<div>
+<p> <img src="Images/logo.png"></img></p>
+</div>
+<table id="suites">
+<tr>
+<td>
+<ul class = menu>
+<br/><li><a href="001_TC_01_Authorize_With_Default_Values_And_Msisdn_Using_Discovery.html" style="color:green" target="main">001_TC_01_Authorize_With_Default_Values_And_Msisdn_Using_Discovery</a></li>
+<br/><li><a href="002_TC_02_Authorize_With_Default_Credentials_And_Msisdn.html" style="color:green" target="main">002_TC_02_Authorize_With_Default_Credentials_And_Msisdn</a></li>
+<br/><li><a href="003_TC_03_Authorize_With_Default_Credentials_And_Edited_Msisdn.html" style="color:green" target="main">003_TC_03_Authorize_With_Default_Credentials_And_Edited_Msisdn</a></li>
+<br/><li><a href="004_TC_04_Authentication_Default_Credentials_Using_Discovery_Msisdn.html" style="color:green" target="main">004_TC_04_Authentication_Default_Credentials_Using_Discovery_Msisdn</a></li>
+<br/><li><a href="005_TC_05_Authentication_With_Default_Credentials_And_Msisdn.html" style="color:green" target="main">005_TC_05_Authentication_With_Default_Credentials_And_Msisdn</a></li>
+<br/><li><a href="006_TC_06_Authentication_With_Default_Credentials_And_Edited_Msisdn.html" style="color:green" target="main">006_TC_06_Authentication_With_Default_Credentials_And_Edited_Msisdn</a></li>
+<br/><li><a href="007_TC_07_UserInfo_Address.html" style="color:green" target="main">007_TC_07_UserInfo_Address</a></li>
+<br/><li><a href="008_TC_08_UserInfo_Email.html" style="color:green" target="main">008_TC_08_UserInfo_Email</a></li>
+<br/><li><a href="009_TC_10_UserInfo_Profile.html" style="color:green" target="main">009_TC_10_UserInfo_Profile</a></li>
+<br/><li><a href="010_TC_11_UserInfo_All_Scopes.html" style="color:green" target="main">010_TC_11_UserInfo_All_Scopes</a></li>
+<br/><li><a href="011_TC_12_Identity_Nationality_Id.html" style="color:green" target="main">011_TC_12_Identity_Nationality_Id</a></li>
+<br/><li><a href="012_TC_13_Identity_Phone.html" style="color:green" target="main">012_TC_13_Identity_Phone</a></li>
+<br/><li><a href="013_TC_14_Identity_Sign_Up.html" style="color:green" target="main">013_TC_14_Identity_Sign_Up</a></li>
+<br/><li><a href="014_TC_15_Identity_All_Scopes.html" style="color:green" target="main">014_TC_15_Identity_All_Scopes</a></li>
+<br/><li><a href="015_TC_16_X_Redirect_App.html" style="color:green" target="main">015_TC_16_X_Redirect_App</a></li>
+<br/><li><a href="016_TC_17_Without_Discovery_without_subsriber_id.html" style="color:green" target="main">016_TC_17_Without_Discovery_without_subsriber_id</a></li>
+<br/><li><a href="017_TC_18_Without_Discovery_with_subsriber_id.html" style="color:green" target="main">017_TC_18_Without_Discovery_with_subsriber_id</a></li>
+<br/><li><a href="018_TC_19_Without_Discovery_with_invalid_subsriber_id.html" style="color:green" target="main">018_TC_19_Without_Discovery_with_invalid_subsriber_id</a></li>
+<br/><li><a href="019_TC_20_Without_Discovery_with_invalid_client_id.html" style="color:green" target="main">019_TC_20_Without_Discovery_with_invalid_client_id</a></li>
+<br/><li><a href="020_TC_21_Without_Discovery_with_invalid_client_secret.html" style="color:green" target="main">020_TC_21_Without_Discovery_with_invalid_client_secret</a></li>
+<br/><li><a href="021_TC_22_Without_Discovery_with_invalid_client_name.html" style="color:green" target="main">021_TC_22_Without_Discovery_with_invalid_client_name</a></li>
+<br/><li><a href="022_TC_09_UserInfo_Phone.html" style="color:green" target="main">022_TC_09_UserInfo_Phone</a></li>
+</ul>
+<script type="text/javascript">
+var make_button_active = function()
+{
+  var siblings =($(this).siblings());
+  siblings.each(function (index)
+    {
+      $(this).removeClass('active');
+    }
+  )
+  $(this).addClass('active');
+}
+$(document).ready(
+  function()
+  {
+    $(".menu li").click(make_button_active);
+  }
+)
+</script>
+</td>
+</tr>
+</table>
+</body>
+</html>

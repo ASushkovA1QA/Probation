@@ -1,0 +1,46 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml" xml:lang="" lang="">
+<head>
+<script type="text/javascript" src="http://ajax.googleapis.com/ajax/libs/jquery/1.5.2/jquery.min.js"></script>
+<style>
+.menu{width: 300px; height: 25; font-size: 16px;}
+.menu li{list-style: none; float: left; margin-right: 1px; padding: 3px;}
+.menu li:hover, .menu li.active {background-color: GreenYellow;}
+</style>
+<title>Automated Tests Results</title>
+<meta http-equiv='Content-Type' content='text/html;charset=utf-8' />
+</head>
+<body style='margin-top: 0;'>
+<div>
+<p> <img src="https://dev.admin.wsdinsider.com/ADM/Content/images/logo_iris.png"></img></p>
+</div>
+<table id="suites">
+<tr>
+<td>
+<ul class = menu>
+<li><a href="0001_TC_03_CheckHealthMonitorGeoEndpoint.html" style="color:green" target="main">0001_TC_03_CheckHealthMonitorGeoEndpoint</a></li>
+</ul>
+<script type="text/javascript">
+var make_button_active = function()
+{
+  var siblings =($(this).siblings());
+  siblings.each(function (index)
+    {
+      $(this).removeClass('active');
+    }
+  )
+  $(this).addClass('active');
+}
+$(document).ready(
+  function()
+  {
+    $(".menu li").click(make_button_active);
+  }
+)
+</script>
+</td>
+</tr>
+</table>
+</body>
+</html>

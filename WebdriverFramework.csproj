@@ -1,0 +1,377 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="4.0" DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">x86</Platform>
+    <ProductVersion>8.0.30703</ProductVersion>
+    <SchemaVersion>2.0</SchemaVersion>
+    <ProjectGuid>{50DD8C55-D19E-436D-854F-C3C790843EDA}</ProjectGuid>
+    <OutputType>Library</OutputType>
+    <AppDesignerFolder>Properties</AppDesignerFolder>
+    <RootNamespace>WebdriverFramework</RootNamespace>
+    <AssemblyName>WebdriverFramework</AssemblyName>
+    <TargetFrameworkVersion>v4.0</TargetFrameworkVersion>
+    <TargetFrameworkProfile>
+    </TargetFrameworkProfile>
+    <FileAlignment>512</FileAlignment>
+    <SccProjectName>
+    </SccProjectName>
+    <SccLocalPath>
+    </SccLocalPath>
+    <SccAuxPath>
+    </SccAuxPath>
+    <SccProvider>
+    </SccProvider>
+    <PublishUrl>publish\</PublishUrl>
+    <Install>true</Install>
+    <InstallFrom>Disk</InstallFrom>
+    <UpdateEnabled>false</UpdateEnabled>
+    <UpdateMode>Foreground</UpdateMode>
+    <UpdateInterval>7</UpdateInterval>
+    <UpdateIntervalUnits>Days</UpdateIntervalUnits>
+    <UpdatePeriodically>false</UpdatePeriodically>
+    <UpdateRequired>false</UpdateRequired>
+    <MapFileExtensions>true</MapFileExtensions>
+    <ApplicationRevision>0</ApplicationRevision>
+    <ApplicationVersion>1.0.0.%2a</ApplicationVersion>
+    <IsWebBootstrapper>false</IsWebBootstrapper>
+    <UseApplicationTrust>false</UseApplicationTrust>
+    <BootstrapperEnabled>true</BootstrapperEnabled>
+    <SolutionDir Condition="$(SolutionDir) == '' Or $(SolutionDir) == '*Undefined*'">.\</SolutionDir>
+    <RestorePackages>true</RestorePackages>
+    <NuGetPackageImportStamp>
+    </NuGetPackageImportStamp>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|x86' ">
+    <PlatformTarget>AnyCPU</PlatformTarget>
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>false</Optimize>
+    <OutputPath>bin\Debug\</OutputPath>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+    <DocumentationFile>WebdriverFramework.XML</DocumentationFile>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|x86' ">
+    <PlatformTarget>x86</PlatformTarget>
+    <DebugType>pdbonly</DebugType>
+    <Optimize>true</Optimize>
+    <OutputPath>bin\Release\</OutputPath>
+    <DefineConstants>TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <PropertyGroup>
+    <StartupObject />
+  </PropertyGroup>
+  <PropertyGroup>
+    <CustomBuildBeforeTargets>Clean</CustomBuildBeforeTargets>
+  </PropertyGroup>
+  <ItemGroup>
+    <Compile Include="forms\AddForm.cs" />
+    <Compile Include="forms\AllTestsForm.cs" />
+    <Compile Include="forms\ProjectNexageForm.cs" />
+    <Compile Include="forms\ProjectListForm.cs" />
+    <Compile Include="forms\TestInfoForm.cs" />
+    <Compile Include="Framework\WebDriver\Elements\List.cs" />
+    <Compile Include="Testrail\Gurock\TestRail\APIClient.cs" />
+    <Compile Include="Testrail\Gurock\TestRail\APIException.cs" />
+    <Compile Include="Testrail\TestRail.cs" />
+    <Compile Include="Tests\Utils\CsvUtils.cs" />
+    <Compile Include="Framework\WebDriver\Elements\Table.cs" />
+    <Compile Include="resources\Constants.cs" />
+    <Compile Include="Framework\API\ApiExecutor.cs" />
+    <Compile Include="Framework\Store.cs" />
+    <Compile Include="Framework\Util\Checker.cs" />
+    <Compile Include="Framework\Util\CheckMessList.cs" />
+    <Compile Include="Framework\Util\CookieManager.cs" />
+    <Compile Include="Framework\Util\DirectoryExtention.cs" />
+    <Compile Include="Framework\Util\EmbeddedResourceUtility.cs" />
+    <Compile Include="Framework\Util\ExcelUtil.cs" />
+    <Compile Include="Framework\Util\HttpUtil.cs" />
+    <Compile Include="Framework\Util\JSExecutor.cs" />
+    <Compile Include="Framework\Util\CommandLineExecutor.cs" />
+    <Compile Include="Framework\Util\OpenPopUtils.cs" />
+    <Compile Include="Framework\Util\ProcessUtils.cs" />
+    <Compile Include="Framework\Util\QueryObject.cs" />
+    <Compile Include="Framework\Util\RegexUtil.cs" />
+    <Compile Include="Framework\Util\SQLConnection.cs" />
+    <Compile Include="Framework\Util\TcpUtils.cs" />
+    <Compile Include="Framework\Util\XmlUtils.cs" />
+    <Compile Include="Framework\WebDriver\BaseDialog.cs" />
+    <Compile Include="Framework\WebDriver\BaseEntity.cs" />
+    <Compile Include="Framework\WebDriver\BaseForm.cs" />
+    <Compile Include="Framework\WebDriver\BaseTest.cs" />
+    <Compile Include="Framework\WebDriver\Browser.cs" />
+    <Compile Include="Framework\WebDriver\BrowserFactory.cs" />
+    <Compile Include="Framework\WebDriver\BrowserBuilder\ChromeDriverBuilder.cs" />
+    <Compile Include="Framework\WebDriver\BrowserBuilder\ChromeMobileEmulatorDriverBuilder.cs" />
+    <Compile Include="Framework\WebDriver\CommonFunctions.cs" />
+    <Compile Include="Framework\WebDriver\Configuration.cs" />
+    <Compile Include="Framework\WebDriver\BrowserBuilder\EdgeDriverBuilder.cs" />
+    <Compile Include="Framework\WebDriver\Elements\BaseElement.cs" />
+    <Compile Include="Framework\WebDriver\Elements\Button.cs" />
+    <Compile Include="Framework\WebDriver\Elements\CheckBox.cs" />
+    <Compile Include="Framework\WebDriver\Elements\ComboBox.cs" />
+    <Compile Include="Framework\WebDriver\Elements\FieldCustom.cs" />
+    <Compile Include="Framework\WebDriver\Elements\Label.cs" />
+    <Compile Include="Framework\WebDriver\Elements\Link.cs" />
+    <Compile Include="Framework\WebDriver\Elements\MenuItem.cs" />
+    <Compile Include="Framework\WebDriver\Elements\RadioButton.cs" />
+    <Compile Include="Framework\WebDriver\Elements\TextBox.cs" />
+    <Compile Include="Framework\WebDriver\BrowserBuilder\FirefoxDriverBuilder.cs" />
+    <Compile Include="Framework\WebDriver\BrowserBuilder\HtmlDriverBuilder.cs" />
+    <Compile Include="Framework\WebDriver\BrowserBuilder\IExploreDriverBuilder.cs" />
+    <Compile Include="Framework\WebDriver\BrowserBuilder\IWebDriverBuilder.cs" />
+    <Compile Include="Framework\WebDriver\GsmaDataReader.cs" />
+    <Compile Include="Framework\WebDriver\KAssert.cs" />
+    <Compile Include="Framework\WebDriver\Logger.cs" />
+    <Compile Include="Framework\WebDriver\Screenshooter.cs" />
+    <Compile Include="Framework\WebDriver\ScreenShotRemoteWebDriver.cs" />
+    <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="Tests\TC_3_Probation.cs" />
+    <Compile Include="Tests\Utils\Enums.cs" />
+    <Compile Include="Tests\Utils\ImageProducer.cs" />
+    <Compile Include="Tests\Utils\UploadImage2Cloud.cs" />
+    <None Include="app.config">
+      <SubType>Designer</SubType>
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </None>
+    <None Include="doxygen.config" />
+    <None Include="packages.config">
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="TestSettings1.testsettings">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </None>
+  </ItemGroup>
+  <ItemGroup>
+    <Content Include="HtmlReport\Chart.htm" />
+    <Content Include="HtmlReport\Data\Chart.js" />
+    <Content Include="HtmlReport\Data\Environment.js" />
+    <Content Include="HtmlReport\Data\Logs.js" />
+    <Content Include="HtmlReport\Data\Table.js" />
+    <Content Include="HtmlReport\Data\TestHierarchy.js" />
+    <Content Include="HtmlReport\Images\ActionChart.png" />
+    <Content Include="HtmlReport\Images\ActionDonate.png" />
+    <Content Include="HtmlReport\Images\ActionErrorWindow.png" />
+    <Content Include="HtmlReport\Images\ActionHelp.png" />
+    <Content Include="HtmlReport\Images\ActionHierarchyWindow.png" />
+    <Content Include="HtmlReport\Images\ActionLicense.png" />
+    <Content Include="HtmlReport\Images\ActionPrint.png" />
+    <Content Include="HtmlReport\Images\ActionTable.png" />
+    <Content Include="HtmlReport\Images\bg.png" />
+    <Content Include="HtmlReport\Images\button_a_bg.gif" />
+    <Content Include="HtmlReport\Images\button_plain_hover.png" />
+    <Content Include="HtmlReport\Images\button_span_bg.gif" />
+    <Content Include="HtmlReport\Images\Class.png" />
+    <Content Include="HtmlReport\Images\datagrid_header_bg.gif" />
+    <Content Include="HtmlReport\Images\logo.png" />
+    <Content Include="HtmlReport\Images\Logs.png" />
+    <Content Include="HtmlReport\Images\Method.png" />
+    <Content Include="HtmlReport\Images\MSTestResultViewer.png" />
+    <Content Include="HtmlReport\Images\Namespace.png" />
+    <Content Include="HtmlReport\Images\Project.png" />
+    <Content Include="HtmlReport\Images\StatusFailed.png" />
+    <Content Include="HtmlReport\Images\StatusIngnored.png" />
+    <Content Include="HtmlReport\Images\StatusPassed.png" />
+    <Content Include="HtmlReport\Images\TreeviewHierarchy.gif" />
+    <Content Include="HtmlReport\Images\TreeviewHierarchyLine.gif" />
+    <Content Include="HtmlReport\Index.htm" />
+    <Content Include="HtmlReport\Javascripts\grid.js" />
+    <Content Include="HtmlReport\Javascripts\jquery.magnifier.js" />
+    <Content Include="HtmlReport\Javascripts\jquery.min.js" />
+    <Content Include="HtmlReport\Javascripts\jquery.treeview.js" />
+    <Content Include="HtmlReport\Javascripts\jqueryThemes\base\images\ui-bg_flat_0_aaaaaa_40x100.png" />
+    <Content Include="HtmlReport\Javascripts\jqueryThemes\base\images\ui-bg_flat_75_ffffff_40x100.png" />
+    <Content Include="HtmlReport\Javascripts\jqueryThemes\base\images\ui-bg_glass_55_fbf9ee_1x400.png" />
+    <Content Include="HtmlReport\Javascripts\jqueryThemes\base\images\ui-bg_glass_65_ffffff_1x400.png" />
+    <Content Include="HtmlReport\Javascripts\jqueryThemes\base\images\ui-bg_glass_75_dadada_1x400.png" />
+    <Content Include="HtmlReport\Javascripts\jqueryThemes\base\images\ui-bg_glass_75_e6e6e6_1x400.png" />
+    <Content Include="HtmlReport\Javascripts\jqueryThemes\base\images\ui-bg_glass_95_fef1ec_1x400.png" />
+    <Content Include="HtmlReport\Javascripts\jqueryThemes\base\images\ui-bg_highlight-soft_75_cccccc_1x100.png" />
+    <Content Include="HtmlReport\Javascripts\jqueryThemes\base\images\ui-icons_222222_256x240.png" />
+    <Content Include="HtmlReport\Javascripts\jqueryThemes\base\images\ui-icons_2e83ff_256x240.png" />
+    <Content Include="HtmlReport\Javascripts\jqueryThemes\base\images\ui-icons_454545_256x240.png" />
+    <Content Include="HtmlReport\Javascripts\jqueryThemes\base\images\ui-icons_888888_256x240.png" />
+    <Content Include="HtmlReport\Javascripts\jqueryThemes\base\images\ui-icons_cd0a0a_256x240.png" />
+    <Content Include="HtmlReport\Javascripts\jqueryThemes\base\jquery.ui.accordion.css" />
+    <Content Include="HtmlReport\Javascripts\jqueryThemes\base\jquery.ui.all.css" />
+    <Content Include="HtmlReport\Javascripts\jqueryThemes\base\jquery.ui.autocomplete.css" />
+    <Content Include="HtmlReport\Javascripts\jqueryThemes\base\jquery.ui.base.css" />
+    <Content Include="HtmlReport\Javascripts\jqueryThemes\base\jquery.ui.button.css" />
+    <Content Include="HtmlReport\Javascripts\jqueryThemes\base\jquery.ui.core.css" />
+    <Content Include="HtmlReport\Javascripts\jqueryThemes\base\jquery.ui.datepicker.css" />
+    <Content Include="HtmlReport\Javascripts\jqueryThemes\base\jquery.ui.dialog.css" />
+    <Content Include="HtmlReport\Javascripts\jqueryThemes\base\jquery.ui.progressbar.css" />
+    <Content Include="HtmlReport\Javascripts\jqueryThemes\base\jquery.ui.resizable.css" />
+    <Content Include="HtmlReport\Javascripts\jqueryThemes\base\jquery.ui.selectable.css" />
+    <Content Include="HtmlReport\Javascripts\jqueryThemes\base\jquery.ui.slider.css" />
+    <Content Include="HtmlReport\Javascripts\jqueryThemes\base\jquery.ui.tabs.css" />
+    <Content Include="HtmlReport\Javascripts\jqueryThemes\base\jquery.ui.theme.css" />
+    <Content Include="HtmlReport\Javascripts\jqueryThemes\cupertino\images\ui-bg_diagonals-thick_90_eeeeee_40x40.png" />
+    <Content Include="HtmlReport\Javascripts\jqueryThemes\cupertino\images\ui-bg_flat_15_cd0a0a_40x100.png" />
+    <Content Include="HtmlReport\Javascripts\jqueryThemes\cupertino\images\ui-bg_glass_100_e4f1fb_1x400.png" />
+    <Content Include="HtmlReport\Javascripts\jqueryThemes\cupertino\images\ui-bg_glass_50_3baae3_1x400.png" />
+    <Content Include="HtmlReport\Javascripts\jqueryThemes\cupertino\images\ui-bg_glass_80_d7ebf9_1x400.png" />
+    <Content Include="HtmlReport\Javascripts\jqueryThemes\cupertino\images\ui-bg_highlight-hard_100_f2f5f7_1x100.png" />
+    <Content Include="HtmlReport\Javascripts\jqueryThemes\cupertino\images\ui-bg_highlight-hard_70_000000_1x100.png" />
+    <Content Include="HtmlReport\Javascripts\jqueryThemes\cupertino\images\ui-bg_highlight-soft_100_deedf7_1x100.png" />
+    <Content Include="HtmlReport\Javascripts\jqueryThemes\cupertino\images\ui-bg_highlight-soft_25_ffef8f_1x100.png" />
+    <Content Include="HtmlReport\Javascripts\jqueryThemes\cupertino\images\ui-icons_2694e8_256x240.png" />
+    <Content Include="HtmlReport\Javascripts\jqueryThemes\cupertino\images\ui-icons_2e83ff_256x240.png" />
+    <Content Include="HtmlReport\Javascripts\jqueryThemes\cupertino\images\ui-icons_3d80b3_256x240.png" />
+    <Content Include="HtmlReport\Javascripts\jqueryThemes\cupertino\images\ui-icons_72a7cf_256x240.png" />
+    <Content Include="HtmlReport\Javascripts\jqueryThemes\cupertino\images\ui-icons_ffffff_256x240.png" />
+    <Content Include="HtmlReport\Javascripts\jqueryThemes\cupertino\jquery-ui-1.8.23.custom.css" />
+    <Content Include="HtmlReport\Javascripts\jqueryThemes\cupertino\jquery.ui.accordion.css" />
+    <Content Include="HtmlReport\Javascripts\jqueryThemes\cupertino\jquery.ui.all.css" />
+    <Content Include="HtmlReport\Javascripts\jqueryThemes\cupertino\jquery.ui.autocomplete.css" />
+    <Content Include="HtmlReport\Javascripts\jqueryThemes\cupertino\jquery.ui.base.css" />
+    <Content Include="HtmlReport\Javascripts\jqueryThemes\cupertino\jquery.ui.button.css" />
+    <Content Include="HtmlReport\Javascripts\jqueryThemes\cupertino\jquery.ui.core.css" />
+    <Content Include="HtmlReport\Javascripts\jqueryThemes\cupertino\jquery.ui.datepicker.css" />
+    <Content Include="HtmlReport\Javascripts\jqueryThemes\cupertino\jquery.ui.dialog.css" />
+    <Content Include="HtmlReport\Javascripts\jqueryThemes\cupertino\jquery.ui.progressbar.css" />
+    <Content Include="HtmlReport\Javascripts\jqueryThemes\cupertino\jquery.ui.resizable.css" />
+    <Content Include="HtmlReport\Javascripts\jqueryThemes\cupertino\jquery.ui.selectable.css" />
+    <Content Include="HtmlReport\Javascripts\jqueryThemes\cupertino\jquery.ui.slider.css" />
+    <Content Include="HtmlReport\Javascripts\jqueryThemes\cupertino\jquery.ui.tabs.css" />
+    <Content Include="HtmlReport\Javascripts\jqueryThemes\cupertino\jquery.ui.theme.css" />
+    <Content Include="HtmlReport\Javascripts\jquery_002.js" />
+    <Content Include="HtmlReport\Javascripts\magnify.cur" />
+    <Content Include="HtmlReport\Library\layout.jquery\jquery-latest.js" />
+    <Content Include="HtmlReport\Library\layout.jquery\jquery-ui-latest.js" />
+    <Content Include="HtmlReport\Library\layout.jquery\jquery.layout-latest.js" />
+    <Content Include="HtmlReport\Library\layout.jquery\layout-default-latest.css" />
+    <Content Include="HtmlReport\License.htm" />
+    <Content Include="HtmlReport\Logs.htm" />
+    <Content Include="HtmlReport\mstest_index.html" />
+    <Content Include="HtmlReport\Styles\contentpage.css" />
+    <Content Include="HtmlReport\Styles\default.css" />
+    <Content Include="HtmlReport\Styles\jquery.treeview.css" />
+    <Content Include="HtmlReport\Styles\ui.jqgrid.css" />
+    <Content Include="HtmlReport\Support.htm" />
+    <Content Include="HtmlReport\Table.htm" />
+    <Content Include="HtmlReport\TestcaseHierarchy.htm" />
+    <Content Include="IEDriverServer.exe">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Content>
+    <Content Include="packages\WebDriver.ChromeDriver.win32.2.20.0.0\content\chromedriver.exe" />
+    <Content Include="packages\WebDriver.GeckoDriver.0.19.0\content\geckodriver.exe" />
+    <Content Include="resources\testconfiguration.xml">
+      <SubType>Designer</SubType>
+    </Content>
+  </ItemGroup>
+  <ItemGroup>
+    <BootstrapperPackage Include=".NETFramework,Version=v4.0">
+      <Visible>False</Visible>
+      <ProductName>Microsoft .NET Framework 4 %28x86 and x64%29</ProductName>
+      <Install>true</Install>
+    </BootstrapperPackage>
+    <BootstrapperPackage Include="Microsoft.Net.Client.3.5">
+      <Visible>False</Visible>
+      <ProductName>.NET Framework 3.5 SP1 Client Profile</ProductName>
+      <Install>false</Install>
+    </BootstrapperPackage>
+    <BootstrapperPackage Include="Microsoft.Net.Framework.3.5.SP1">
+      <Visible>False</Visible>
+      <ProductName>.NET Framework 3.5 SP1</ProductName>
+      <Install>false</Install>
+    </BootstrapperPackage>
+    <BootstrapperPackage Include="Microsoft.Windows.Installer.4.5">
+      <Visible>False</Visible>
+      <ProductName>Windows Installer 4.5</ProductName>
+      <Install>true</Install>
+    </BootstrapperPackage>
+  </ItemGroup>
+  <ItemGroup>
+    <Reference Include="ApprovalUtilities, Version=3.0.0.0, Culture=neutral, PublicKeyToken=11bd7d124fc62e0f, processorArchitecture=MSIL">
+      <HintPath>packages\ApprovalUtilities.3.0.13\lib\net35\ApprovalUtilities.dll</HintPath>
+      <Private>True</Private>
+    </Reference>
+    <Reference Include="Cloudinary, Version=1.1.1.0, Culture=neutral, PublicKeyToken=c8234dc617ae7841, processorArchitecture=MSIL">
+      <HintPath>packages\CloudinaryDotNet.1.1.1\lib\net\net40\Cloudinary.dll</HintPath>
+    </Reference>
+    <Reference Include="Dapper, Version=1.40.0.0, Culture=neutral, processorArchitecture=MSIL">
+      <HintPath>packages\Dapper.1.42\lib\net40\Dapper.dll</HintPath>
+      <Private>True</Private>
+    </Reference>
+    <Reference Include="ImapX">
+      <HintPath>packages\ImapX.2.0.0.16\lib\net40\ImapX.dll</HintPath>
+    </Reference>
+    <Reference Include="log4net">
+      <HintPath>packages\log4net.2.0.3\lib\net40-full\log4net.dll</HintPath>
+    </Reference>
+    <Reference Include="Microsoft.CSharp" />
+    <Reference Include="Microsoft.Office.Interop.Excel, Version=15.0.0.0, Culture=neutral, PublicKeyToken=71e9bce111e9429c, processorArchitecture=MSIL">
+      <HintPath>packages\Microsoft.Office.Interop.Excel.15.0.4795.1000\lib\net20\Microsoft.Office.Interop.Excel.dll</HintPath>
+      <EmbedInteropTypes>True</EmbedInteropTypes>
+    </Reference>
+    <Reference Include="Microsoft.VisualBasic" />
+    <Reference Include="Microsoft.VisualStudio.QualityTools.UnitTestFramework, Version=10.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a, processorArchitecture=MSIL" />
+    <Reference Include="NetOffice, Version=1.7.3.0, Culture=neutral, PublicKeyToken=297f57b43ae7c1de, processorArchitecture=MSIL">
+      <HintPath>packages\NetOffice.Core.Net40.1.7.3.0\lib\net40\NetOffice.dll</HintPath>
+      <EmbedInteropTypes>False</EmbedInteropTypes>
+    </Reference>
+    <Reference Include="Newtonsoft.Json, Version=10.0.0.0, Culture=neutral, PublicKeyToken=30ad4fe6b2a6aeed, processorArchitecture=MSIL">
+      <HintPath>packages\CloudinaryDotNet.1.1.1\lib\net\net40\Newtonsoft.Json.dll</HintPath>
+    </Reference>
+    <Reference Include="office, Version=15.0.0.0, Culture=neutral, PublicKeyToken=71e9bce111e9429c, processorArchitecture=MSIL">
+      <EmbedInteropTypes>True</EmbedInteropTypes>
+    </Reference>
+    <Reference Include="OfficeApi, Version=1.7.3.0, Culture=neutral, PublicKeyToken=a39beb0835c43c8e, processorArchitecture=MSIL">
+      <HintPath>packages\NetOffice.Core.Net40.1.7.3.0\lib\net40\OfficeApi.dll</HintPath>
+      <EmbedInteropTypes>False</EmbedInteropTypes>
+    </Reference>
+    <Reference Include="OpenPop">
+      <HintPath>packages\OpenPop.NET.2.0.6.1116\lib\net40\OpenPop.dll</HintPath>
+    </Reference>
+    <Reference Include="Oracle.ManagedDataAccess">
+      <HintPath>packages\Oracle.ManagedDataAccess.12.1.021\lib\net40\Oracle.ManagedDataAccess.dll</HintPath>
+    </Reference>
+    <Reference Include="System" />
+    <Reference Include="System.Configuration" />
+    <Reference Include="System.Data" />
+    <Reference Include="System.Drawing" />
+    <Reference Include="System.Management" />
+    <Reference Include="System.Web" />
+    <Reference Include="System.Web.Extensions" />
+    <Reference Include="System.Xml" />
+    <Reference Include="System.Xml.Linq" />
+    <Reference Include="VBIDEApi, Version=1.7.3.0, Culture=neutral, PublicKeyToken=931cec8882205047, processorArchitecture=MSIL">
+      <HintPath>packages\NetOffice.Core.Net40.1.7.3.0\lib\net40\VBIDEApi.dll</HintPath>
+      <EmbedInteropTypes>False</EmbedInteropTypes>
+    </Reference>
+    <Reference Include="WebDriver, Version=2.53.0.0, Culture=neutral, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>packages\Selenium.WebDriver.2.53.0\lib\net40\WebDriver.dll</HintPath>
+      <Private>True</Private>
+    </Reference>
+    <Reference Include="WebDriver.Support, Version=2.53.0.0, Culture=neutral, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>packages\Selenium.Support.2.53.0\lib\net40\WebDriver.Support.dll</HintPath>
+      <Private>True</Private>
+    </Reference>
+  </ItemGroup>
+  <ItemGroup>
+    <Service Include="{82A7F48D-3B50-4B1E-B82E-3ADA8210C358}" />
+  </ItemGroup>
+  <ItemGroup />
+  <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
+  <Import Project="$(SolutionDir)\.nuget\NuGet.targets" Condition="Exists('$(SolutionDir)\.nuget\NuGet.targets')" />
+  <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 
+       Other similar extension points exist, see Microsoft.Common.targets.  -->
+  <Target Name="BeforeBuild">
+    <Exec Command="nuget.exe install packages.config -o .\packages" />
+  </Target>
+  <ItemGroup>
+    <Content Include="packages\Selenium.WebDriver.ChromeDriver.2.20.0.0\driver\chromedriver.exe">
+      <Link>chromedriver.exe</Link>
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+  </ItemGroup>
+  <!--<Target Name="AfterBuild">
+  </Target> -->
+</Project>
